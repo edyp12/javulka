@@ -1,0 +1,27 @@
+<html>
+ <head>
+ <script type="text/javascript">
+ function Spodnie(Marka_k,Rozmiar_k,kroj_k)//początek konstruktora
+{
+this.Marka=Marka_k;
+this.Rozmiar=Rozmiar_k;
+this.kroj=kroj_k;
+}//koniec konstruktora
+ Spodnie.prototype.wypisz_Szarafinski = function () //definicja metody
+ {
+ alert(this.Marka + ' ' + this.Rozmiar+ ' ' + this.kroj);
+ };
+var Spodnie1 = new Spodnie("Adidas", "36", "Baggy"); // nowy obiekt Spodnie1
+var Spodnie2 = new Spodnie('Nike', '32', 'Straight');
+Spodnie1.wypisz_Szarafinski(); // uruchomienie metody wypisz() dotyczącej spodni1
+Spodnie2.wypisz_Szarafinski();
+ document.write("dostęp do właściwości"+"<br>");
+// poniżej dostęp do pól spodni1
+ document.write("klient pierwszy"+" "+Spodnie1.Marka+" "+Spodnie1.Rozmiar+" "+Spodnie1.kroj);
+ </script>
+ </head>
+<body>
+<br>
+ programowanie obiektowe
+</body>
+</html>
